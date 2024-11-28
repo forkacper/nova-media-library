@@ -73,4 +73,9 @@ class NovaMediaLibrary extends Tool
 		$json = json_decode(file_get_contents($file));
 		return is_object($json) ? $json : [];
 	}
+
+    public function menu(\Laravel\Nova\Http\Requests\NovaRequest $request)
+    {
+        return null; // Lub odpowiednia logika dla Twojego projektu
+    }
 }
